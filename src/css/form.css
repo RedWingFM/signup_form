@@ -1,0 +1,166 @@
+
+.container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	justify-content: center;
+	position: relative;
+}
+
+.signup-button,
+.login-button {
+	background-color: inherit;
+	border: 0;
+	cursor: pointer;
+	font-size: inherit;
+	padding: 7px 10px;
+	z-index: 2;
+}
+
+.signup-button i,
+.login-button i {
+	padding-right: 4px;
+}
+
+.signup-button {
+	background-color: #ff0066;
+	color: #ffffff;
+}
+
+.login-button {
+	background-color: #66aacc;
+	color: #ffffff;
+}
+
+.signup-form,
+.login-form {
+	background-color: #eeeeee;
+	min-height: 455px;
+	padding: 15px;
+	width: 300px;
+}
+
+.lang-button {
+	background-color: #6868ce;
+	border: 0;
+	color: #ffffff;
+	cursor: pointer;
+	display: block;
+	font-size: 12px;
+	height: 35px;
+	padding: 0 15px;
+	width: 300px;
+}
+
+.form-header {
+	margin: 10px 0;
+	text-align: center;
+}
+
+.form-row {
+	margin: 2px 0;
+	padding: 3px 0;
+}
+
+.signup-form label,
+.signup-form input::placeholder,
+.login-form label,
+.login-form input::placeholder {
+	font-weight: bold;
+}
+
+.signup-form input,
+.login-form input
+ {
+	border: 1px solid #cccccc;
+	margin: 5px 0;
+	padding: 5px;
+	width: 100%;
+}
+
+.signup-form input:valid,
+.login-form input:valid {
+	border: 1px solid #00ff00;
+}
+
+.signup-form input:focus[type=email],
+.signup-form input:focus[type=text],
+.signup-form input:focus[type=password],
+.login-form input:focus[type=email],
+.login-form input:focus[type=text],
+.login-form input:focus[type=password] {
+	border: 1px solid #0000ff;
+}
+
+.error-text {
+	display: block;
+	font-size: 13px;
+	padding-left: 10px;
+}
+
+span.error-text {
+	color: #ff0000;
+	display: none;
+}
+
+.signup-form input[type=submit],
+.login-form input[type=submit] {
+	background-color: #477898;
+	border: 1px solid #366787;
+	color: #ffffff;
+	cursor: pointer;
+	display: block;
+	height: 40px;
+	margin: 20px auto 5px;
+	width: 150px;
+}
+
+input.invalid {
+	border: 1px solid #ff0000;
+}
+
+form.active {
+	display: block;
+}
+
+@media screen and (max-width: 768px) {
+	.signup-button,
+	.login-button {
+		top: 95px;
+	}
+
+	.signup-form,
+	.login-form {
+		min-height: 413px;
+	}
+
+	span,
+	span.error-text {
+		font-size: 11px;
+	}
+}
+
+@media screen and (max-width: 504px) {
+	.signup-button,
+	.login-button {
+		top: 100px;
+	}
+
+	span,
+	span.error-text {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.signup-button,
+	.login-button {
+		top: 105px;
+	}
+
+	span,
+	span.error-text {
+		font-size: 9px;
+	}
+}

@@ -1,0 +1,21 @@
+
+.container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	justify-content: center;
+}
+
+.profile {
+	background-color: #cccccc;
+	border-radius: 4px;
+	min-height: 200px;
+	min-width: 400px;
+	padding: 20px;
+}
+
+.profile__header {
+	margin-bottom: 30px;
+	text-align: center;
+}
